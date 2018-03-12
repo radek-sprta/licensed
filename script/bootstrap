@@ -41,3 +41,9 @@ if [ -n "$(which cabal)" ]; then
   cabal new-build
   popd
 fi
+
+if [ -n "$(which pipenv)" ]; then
+  pushd pipenv
+  pipenv install
+  popd
+fi

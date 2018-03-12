@@ -52,7 +52,8 @@ module Licensed
         Source::Cabal.new(self),
         Source::Go.new(self),
         Source::Manifest.new(self),
-        Source::NPM.new(self)
+        Source::NPM.new(self),
+        Source::Pipfile.new(self)
       ].select(&:enabled?)
     end
 
